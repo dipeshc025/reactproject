@@ -1,9 +1,9 @@
 import React from 'react'
 import Header from './components/Header'
-import Display from './pages/home/Display'
 import Tech from './pages/home/Tech'
 import Info from './pages/home/info'
 import Footer from './components/Footer'
+import DisplaySec from './pages/home/DisplaySec '
 
 const App = () => {
 
@@ -11,7 +11,7 @@ const App = () => {
   return (
     <div>
       <Header />
-      <Display />
+      <DisplaySec />
       <Tech />
       <Info />
       <Footer />
