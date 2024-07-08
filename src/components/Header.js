@@ -1,14 +1,22 @@
-import React from 'react'
 
-function Header() {
+import React from 'react'
+import { NavLink } from 'react-router-dom'
+
+const Header = () => {
   return (
-    <div className='bg-black text-white flex items-baseline px-4 py-2 justify-between'>
-      <h1 className='text-2xl'>Demo</h1>
-     <nav className='space-x-3'>
-     <a href="" className='s-link'>About</a>
-     <a href="" className='s-link'>Contact</a>
-     </nav>
-    </div>
+    <header className='bg-black text-white flex items-end justify-between px-4 py-2'>
+
+      <h1 className='text-3xl'>Web Tail</h1>
+
+      <nav className=''>
+        <NavLink to='/about-page' className='hover:bg-white hover:text-black px-2 py-2'>About</NavLink>
+
+        <NavLink to='/contact-page'className='hover:bg-white hover:text-black px-2 py-2'>Contact</NavLink>
+
+      </nav>
+
+
+    </header>
   )
 }
 

@@ -2,7 +2,14 @@
 module.exports = {
   content: ["./src/**/*.{html,js}"],
   theme: {
-    extend: {},
+    extend: {
+      backgroundColor:{
+        "rd": '#3F3056'
+      },
+      animation:{
+        'bounce-slow': 'bounce 1s linear infinite',
+      },
+    },
     screens: {
       '2xl': { 'max': '1536px' },
       'xl': { 'max': '1280px' },
